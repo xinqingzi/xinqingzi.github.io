@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta
+      name="keywords"
+      content="backery, mooncake, sweets, chiffon cake, china, chinese, culture, holiday treats, mid-autumn festival"
+    />
+    <meta name="author" content="XI Gao" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Xi Gao Bakery</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>Xi Gao Bakery</header>
+    <!--
+      lists of navigation to different pages
+    -->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="mooncake.html">MOONCAKE</a></li>
+        <li><a href="chiffoncake.html">CHIFFON CAKE</a></li>
+        <li><a class="contact" href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <h1>contact us for your next event or party</h1>
+
+    <p>
+      our cakes will be the best choice for your birthday party, wedding, or any
+      special occasion.
+    </p>
+    <p>Please fill out the form below to order.</p>
+ <!--
+      form for users to order cakes, and the form will send to my email
+    -->
+    <form action="https://formsubmit.co/gaoxisue@gmail.com" method="POST">
+      <label for="firstname">first name:</label>
+      <input id="firstname" type="text" placeholder="Xi" required />
+      <br />
+      <label for="lastname">last name:</label>
+      <input id="lastname" type="text" placeholder="Gao" required />
+      <br />
+      <label for="email">email:</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="gaoxisue@gmail.com"
+        required
+      />
+      <br />
+      <label for="phone">phone number:</label>
+      <input
+        id="phone"
+        type="tel"
+        placeholder="(669)226-1848"
+        pattern="\([0-9]{3}\)[0-9]{3}-[0-9]{4}"
+      />
+      <br />
+      <label for="birthdate">birthdate:</label>
+      <input id="birthdate" type="date" />
+      <br />
+      <label for="cake">cake to order:</label>
+      <select id="cake">
+        <option value="chiffon cake">chiffon cake</option>
+        <option value="mooncake">mooncake</option>
+      </select>
+      <br />
+
+      <label for="flavor">flavor:</label>
+      <input id="chocolate" type="radio" value="chocolate" name="flavor" />
+      <label for="chocolate">chocolate</label>
+      <input id="matcha" type="radio" value="matcha" name="flavor" />
+      <label for="matcha">matcha</label>
+      <input id="greentea" type="radio" value="green tea" name="flavor" />
+      <label for="greentea">green tea</label>
+      <input id="ube" type="radio" value="ube" name="flavor" />
+      <label for="ube">ube</label>
+      <br />
+
+      <label for="quantity">quantity</label>
+      <input id="quantity" type="number" min="0" max="10" value="1" />
+
+      <br />
+      <label for="special">special instruction:</label>
+      <textarea id="special" rows="3" column="100"></textarea>
+
+      <br />
+      <input type="reset" />
+      <input type="submit" />
+    </form>
+    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
+    <footer class="footer"></footer>
+  </body>
+</html>
